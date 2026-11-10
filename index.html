@@ -1,316 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
-  <title>Sangork Global Solutions</title>
-  <meta name="description" content="Sangork Global Solutions offers AI development, machine learning solutions, and IT consulting services across India and globally. We help businesses innovate using artificial intelligence.">
-  <meta name="keywords" content="Sangork Global, Sangorkglobal, Sangork Global Solutions, AI Development, Artificial Intelligence Services, AI Solutions, IT Services India, Machine Learning, Deep Learning, Sangork">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; }
-    nav { background: #002b5c; }
-    .nav-link, .navbar-brand { color: #fff !important; }
-    .hero-slide {
-      height: 80vh;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      color: white;
-      display: flex;
-      align-items: center;
-    }
-    .hero-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.4);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      flex-direction:column;
-      text-align:center;
-    }
-    .services, .insights { padding: 60px 0; }
-    .service-card { transition: transform 0.3s; }
-    .service-card:hover { transform: translateY(-5px); }
-    .footer { background: #f2f2f2; padding: 40px 0; font-size: 0.9rem; }
-    .footer a { color: #333; text-decoration: none; }
-    .footer a:hover { text-decoration: underline; }
-    .transparent-input {
-    background-color: transparent;
-    color: white;
-    border: 1px solid #fff;
-  }
-
-  .transparent-input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .transparent-input:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    box-shadow: none;
-    border-color: #ddd;
-  }
-  </style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061018">
+  <meta name="description" content="Sangork Global Solutions helps enterprises transform with AI, cloud, cybersecurity and custom software.">
+  <title>Sangork Global Solutions — Transforming Enterprises with AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Sangork home">
+      <span class="brand-mark">S<span>✳</span></span>
+      <span class="brand-name">SANGORK<small>GLOBAL SOLUTIONS</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#services">Services</a><a href="#approach">About</a><a href="#insights">Insights</a>
+    </nav>
+    <a class="button button-small button-outline header-cta" href="#contact">Let’s talk <span>↗</span></a>
+  </header>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top px-4">
-  <!-- <img src="images/logo.png" style="width: 3%;"> -->
-  <a class="navbar-brand" href="#">Sangork Global Solutions</a>
-  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navMenu">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-      <li class="nav-item"><a class="nav-link" href="#carrer">Careers</a></li>
-      <li class="nav-item"><a class="nav-link" href="#platforms">Platforms</a></li>
-      <li class="nav-item"><a class="nav-link" href="#insights">Insights</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Hero Slider -->
-<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <!-- <img href="D:/Downloads/'ChatGPT Image Jun 28, 2025, 11_13_02 AM.png'"> -->
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-        
-      <div class="hero-slide" style="background-image:url('images/ai_dev_image_team.png')">
-        <div class="hero-overlay animate__animated animate__fadeIn">
-          <h1>Transforming Enterprises with AI</h1>
-          <p>Smart, scalable solutions for modern business</p>
-          <a href="#services" class="btn btn-primary mt-3">Explore Solutions</a>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> AI · CLOUD · SOFTWARE DEVELOPMENT</div>
+        <h1>Transforming<br>enterprises with <span class="gradient-text">AI.</span></h1>
+        <p class="hero-lede">We turn complex challenges into intelligent solutions—helping ambitious teams build, scale, and move confidently into what’s next.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Start your transformation <span>↗</span></a>
+          <a class="text-link" href="#services">Explore our services <span>→</span></a>
+        </div>
+        <div class="metrics">
+          <div><strong>250<span>+</span></strong><small>Projects delivered</small></div>
+          <div><strong>99.9<span>%</span></strong><small>Service reliability</small></div>
+          <div><strong>24<span>/7</span></strong><small>Expert support</small></div>
         </div>
       </div>
-    </div>
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <div class="hero-slide" style="background-image:url('images/Cloud_devlop.png')">
-        <div class="hero-overlay animate__animated animate__zoomIn">
-          <h1>Cloud-Native Platforms & Develop AI Platforms</h1>
-          <p>Innovate, scale, and develop your future</p>
-          <a href="#platforms" class="btn btn-primary mt-3">See Platforms</a>
-        </div>
+      <div class="hero-visual" aria-label="Abstract digital intelligence illustration">
+        <div class="visual-top"><span class="live-indicator"></span> SANGORK INTELLIGENCE <span class="visual-index">SYS / 001</span></div>
+        <div class="orb-wrap"><div class="orb"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div><div class="crosshair">+</div></div>
+        <div class="visual-chip chip-ai"><span class="chip-icon">✳</span><span><b>AI systems</b><small>Adaptive intelligence</small></span><span class="chip-arrow">↗</span></div>
+        <div class="visual-chip chip-cloud"><span class="chip-icon blue">⌁</span><span><b>Cloud native</b><small>Scale without limits</small></span><span class="chip-arrow">↗</span></div>
+        <div class="visual-caption"><span>01 — BUILT FOR TOMORROW</span><b>Smarter. Faster. Together.</b></div>
+        <div class="visual-grid"></div>
       </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
+    </section>
 
-<!-- Services Section -->
-<section id="services" class="services container">
-  <h2 class="text-center mb-5">Our Core Services</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card service-card h-100">
-        <img src="images/software_dev.png" class="card-img-top" alt="AI & Automation">
-        <div class="card-body">
-          <h5 class="card-title">AI,Gen AI & Automation</h5>
-          <p class="card-text">End-to-end AI-driven transformation</p>
-        </div>
+    <section class="trust-strip section-wrap" aria-label="Capabilities">
+      <span>ENGINEERED FOR WHAT’S NEXT</span>
+      <div class="trust-pill">✳ AI-first thinking</div><div class="trust-pill">◈ Cloud-native delivery</div><div class="trust-pill">⌑ Security by design</div><div class="trust-pill">⚡ Fastly edge delivery</div><div class="trust-pill">↗ Enterprise-ready execution</div>
+    </section>
+
+    <section class="services section-wrap" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow">WHAT WE DO</div><h2>Technology that moves<br><span class="muted">business forward.</span></h2></div>
+        <p>From business strategy to platform delivery, we help ambitious teams turn ideas into secure, scalable systems that perform in the real world.</p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card service-card h-100">
-        <img src="images/cloud.jpeg" class="card-img-top" alt="Cloud Services">
-        <div class="card-body">
-          <h5 class="card-title">Cloud Services</h5>
-          <p class="card-text">Secure, scalable, and optimized cloud architectures</p>
-        </div>
+      <div class="service-grid">
+        <article class="service-card card-ai">
+          <div class="card-top"><div class="service-icon">✳</div><span class="card-number">01 / 05</span></div>
+          <div class="card-art art-ai"><span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span><span class="node n5"></span><span class="node n6"></span></div>
+          <h3>AI &amp; Automation</h3><p>Turn operational complexity into measurable advantage with practical AI systems and workflow optimization.</p>
+          <ul><li>Generative AI &amp; copilots</li><li>Workflow automation</li><li>Machine learning solutions</li></ul>
+          <a class="card-link" href="#contact">Explore AI solutions <span>↗</span></a>
+        </article>
+        <article class="service-card card-cloud">
+          <div class="card-top"><div class="service-icon">⌁</div><span class="card-number">02 / 05</span></div>
+          <div class="card-art art-cloud"><div class="cloud-shape">☁</div><div class="cloud-line line1"></div><div class="cloud-line line2"></div><div class="cloud-line line3"></div></div>
+          <h3>Cloud Services</h3><p>Modernize your infrastructure with resilient, high-performance platforms built for scale, speed, and continuity.</p>
+          <ul><li>Cloud migration &amp; strategy</li><li>Platform engineering</li><li>Fastly-powered edge delivery</li><li>DevOps &amp; optimization</li></ul>
+          <a class="card-link" href="#contact">Explore cloud solutions <span>↗</span></a>
+        </article>
+        <article class="service-card card-sec">
+          <div class="card-top"><div class="service-icon">⬡</div><span class="card-number">03 / 05</span></div>
+          <div class="card-art art-sec"><div class="shield">✓</div><span class="scan scan1"></span><span class="scan scan2"></span><span class="scan scan3"></span></div>
+          <h3>Cybersecurity</h3><p>Protect critical assets with security architecture that is embedded early and designed for long-term trust.</p>
+          <ul><li>Security assessments</li><li>Threat detection &amp; response</li><li>Identity and access</li></ul>
+          <a class="card-link" href="#contact">Explore security <span>↗</span></a>
+        </article>
+        <article class="service-card card-ai">
+          <div class="card-top"><div class="service-icon">◎</div><span class="card-number">04 / 05</span></div>
+          <div class="card-art art-ai"><span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span><span class="node n5"></span><span class="node n6"></span></div>
+          <h3>Recruiting</h3><p>Build high-performing teams with strategic hiring support tailored to technology and growth-focused businesses.</p>
+          <ul><li>Technical talent acquisition</li><li>Role design &amp; hiring strategy</li><li>Executive search support</li></ul>
+          <a class="card-link" href="#contact">Discuss hiring needs <span>↗</span></a>
+        </article>
+        <article class="service-card card-cloud">
+          <div class="card-top"><div class="service-icon">▣</div><span class="card-number">05 / 05</span></div>
+          <div class="card-art art-cloud"><div class="cloud-shape">☰</div><div class="cloud-line line1"></div><div class="cloud-line line2"></div><div class="cloud-line line3"></div></div>
+          <h3>Consulting</h3><p>Align technology investments with business goals through advisory that blends strategy, execution, and measurable outcomes.</p>
+          <ul><li>Digital transformation advisory</li><li>Roadmap planning</li><li>Delivery and modernization guidance</li></ul>
+          <a class="card-link" href="#contact">Explore consulting <span>↗</span></a>
+        </article>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card service-card h-100">
-        <img src="images/dev.png" class="card-img-top" alt="Cybersecurity">
-        <div class="card-body">
-          <h5 class="card-title">Software Development</h5>
-          <p class="card-text">Develop AI driven software for your solutions</p>
-        </div>
+    </section>
+
+    <section class="approach section-wrap" id="approach">
+      <div class="approach-visual"><div class="ring ring1"></div><div class="ring ring2"></div><div class="ring ring3"></div><div class="approach-core">S<span>✳</span></div><div class="approach-tag">HUMAN-LED. AI-ENABLED.</div></div>
+      <div class="approach-copy"><div class="eyebrow">THE SANGORK APPROACH</div><h2>Big-picture thinking.<br><span class="gradient-text">Precise execution.</span></h2><p>We combine strategic clarity with engineering depth to help leaders modernize operations, improve resilience, and unlock sustainable growth with confidence.</p>
+        <div class="approach-points"><div><span>01</span><div><b>Discover with intent</b><small>Align on outcomes, constraints and the right path forward.</small></div></div><div><span>02</span><div><b>Design for real life</b><small>Build secure, accessible systems that teams love to use.</small></div></div><div><span>03</span><div><b>Deliver and evolve</b><small>Measure impact, learn quickly and keep improving.</small></div></div></div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Platforms / Products -->
-<section id="platforms" class="services bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5">Platform Highlights</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card h-100">
-          <img src="images/ai_dev_platform.png" class="card-img-top" alt="Platform 1">
-          <div class="card-body">
-            <h5 class="card-title">AI & Development Solutions</h5>
-            <p class="card-text">We delivers cutting-edge AI, Gen AI, Development and automation technologies to drive intelligent digital transformation for enterprises.</p>
-          </div>
-        </div>
+    <section class="insights section-wrap" id="insights">
+      <div class="section-heading">
+        <div><div class="eyebrow">CLIENT PERSPECTIVES</div><h2>Built on trust.<br><span class="muted">Measured by impact.</span></h2></div>
+        <div class="carousel-controls"><button id="prev-testimonial" aria-label="Previous testimonial">←</button><button id="next-testimonial" aria-label="Next testimonial">→</button></div>
       </div>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <img src="images/cloud_platform2.png" class="card-img-top" alt="Platform 2">
-          <div class="card-body">
-            <h5 class="card-title">Cloud Services & Computing</h5>
-            <p class="card-text">We offers secure cloud services, IT support, and scalable computing to streamline operations and drive business agility.</p>
-          </div>
-        </div>
+      <div class="testimonial-grid" id="testimonial-grid">
+        <article class="testimonial"><div class="quote-mark">“</div><p>“The team helped us rethink repetitive work and gave our people more time for the work that matters.”</p><div class="person"><div class="avatar avatar-one">PS</div><div><b>Priya S.</b><small>Operations Director </small></div></div></article>
+        <article class="testimonial"><div class="quote-mark">“</div><p>“A clear roadmap, thoughtful engineering and a delivery team that made a complex cloud journey feel manageable.”</p><div class="person"><div class="avatar avatar-two">RM</div><div><b>Rahul M.</b><small>Technology Lead  </small></div></div></article>
+        <article class="testimonial"><div class="quote-mark">“</div><p>“Security was part of the conversation from the beginning—not something bolted on at the end.”</p><div class="person"><div class="avatar avatar-three">AR</div><div><b>Ananya R.</b><small>Product Leader  </small></div></div></article>
       </div>
-    </div>
-  </div>
-</section>
+      <p class="demo-note">Demo content: replace these illustrative testimonials and metrics with approved client quotes and verified company data before launch.</p>
+    </section>
 
-<!-- Insights -->
-<section id="insights" class="insights container">
-  <h2 class="text-center mb-5">Latest Customer Insights</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card h-100">
-        <!-- <img src="insight1.jpg" class="card-img-top" alt="Insight"> -->
-        <div class="card-body">
-          <h5 class="card-title"> AI & Gen AI Solutions</h5>
-          <p class="card-text" style="font-style: italic;"> “Sangork’s AI capabilities completely transformed our data operations. Their Gen AI tools brought efficiency and predictive accuracy we didn’t think possible.”</p>
-          <!-- <a href="#" class="btn btn-link">Read More →</a> -->
-          <!-- <p class="card-text">— Head of Analytics, FinTech Enterprise</p> -->
-        </div>
+    <section class="contact section-wrap" id="contact">
+      <div>
+        <div class="eyebrow">READY WHEN YOU ARE</div>
+        <h2>Let’s build what’s next.</h2>
+        <p>Tell us where you want to go. We’ll help map the smartest, most resilient path to get there.</p>
+        <p><a href="https://sangork.com" target="_blank" rel="noreferrer" style="color: var(--teal); font-weight: 700;">sangork.com</a></p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <!-- <img src="insight1.jpg" class="card-img-top" alt="Insight"> -->
-        <div class="card-body">
-          <h5 class="card-title"> Cloud Services & Support</h5>
-          <p class="card-text" style="font-style: italic;">“Migrating to the cloud with Sangork was seamless. Their team ensured zero downtime and helped us scale securely and affordably.”</p>
-          <!-- <a href="#" class="btn btn-link">Read More →</a> -->
-          <!-- <p class="card-text">—— CTO, Retail Technology Firm</p> -->
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <!-- <img src="insight1.jpg" class="card-img-top" alt="Insight"> -->
-        <div class="card-body">
-          <h5 class="card-title"> IT & Computing Infrastructuret</h5>
-          <p class="card-text" style="font-style: italic;">“Their IT support is proactive and responsive. Our global teams now work faster and with more confidence, thanks to Sangork’s reliable computing solutions.”</p>
-          <!-- <a href="#" class="btn btn-link">Read More →</a> -->
-          <!-- <p class="card-text">— Operations Manager, Global Logistics Company</p> -->
-        </div>
-      </div>
-    </div>
-    <!-- Repeat for more cards -->
-  </div>
-</section>
-
-<!-- carrer -->
-<section id="career" class="career container">
-  <h2 class="text-center mb-5">Career</h2>
-  <div class="row g-4">
-    <div class="col-md-4" style="width: 100%;">
-      <div class="card h-100 text-white" style="background: url('images/hr_image.png') center/cover no-repeat; position: relative;">
-        <div class="card-body" style="background: rgba(0,0,0,0.5); padding: 2rem;">
-          <h5 class="card-title">Career/Recruitment</h5>
-          <p class="card-text">Want to join our Team</p>
-
-          <form id="careerForm" method="POST" enctype="multipart/form-data">
-            <div class="mb-3">
-              <input type="email" class="form-control transparent-input" name="email" placeholder="Your Email" required>
-            </div>
-
-            <div class="mb-3">
-              <textarea class="form-control transparent-input" rows="3" name="message" placeholder="Message/Brief about yourself"></textarea>
-            </div>
-
-            <!-- <div class="mb-3">
-              <label class="form-label text-white">Upload Resume (PDF/DOC/DOCX)</label>
-              <input type="file" class="form-control transparent-input" name="resume" accept=".pdf,.doc,.docx" required>
-            </div> -->
-
-            <button type="submit" class="btn btn-light">Submit</button>
-          </form>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<hr>
-<!-- Contact Footer -->
-<footer id="contact" class="footer text-white" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); padding: 60px 0;">
-  <div class="container">
-    <div class="row">
-      <!-- Contact Form -->
-      <div class="col-lg-4 col-md-6 mb-4">
+      <a class="button button-primary" href="mailto:hr@sangork.com?subject=Let's%20talk%20technology">Start a conversation <span>↗</span></a>
+    </section>
+  <footer id="contact" class="contact section-wrap">
+    <div class="footer-contact-inner section-wrap">
+      <div class="footer-column">
         <h5>Get in Touch</h5>
-        <form>
-          <div class="mb-3">
-            <input type="email" class="form-control transparent-input" placeholder="Your Work Email">
+        <form class="footer-form">
+          <div>
+            <input type="email" placeholder="Your Work Email">
           </div>
-          <div class="mb-3">
-            <textarea class="form-control transparent-input" rows="3" placeholder="Message"></textarea>
+          <div>
+            <textarea rows="3" placeholder="Message"></textarea>
           </div>
-          <button type="submit" class="btn btn-outline-light">Request Info</button>
+          <button type="submit">Request Info</button>
         </form>
       </div>
-      
-      <div class="col-lg-4 col-md-6 mb-4">
+
+      <div class="footer-column">
         <h5>Contact Us</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none"></a></li>
-          <li><a href="#" class="text-white text-decoration-none">Spacion Business Centre</a></li>
-          <li>
-            <p class="text-white mb-1">1st floor, Madhapur, Hyderabad,<br> Telangana, India, 500081</p>
-          </li>
-          <li>
-            <a href="mailto:info@sangorkglobal.com" class="text-white text-decoration-none">
-              Email: hr@sangorkglobal.com
-            </a>
-          </li>
-          <!-- <li>
-            <a href="https://www.google.com/maps/search/?api=1&query=H+No+1-98-5-2a+Madhapur+Hyderabad+Telangana+500081" 
-               target="_blank" 
-               class="text-white text-decoration-none">
-              View Location on Map
-            </a>
-          </li> -->
+        <ul class="footer-list">
+          <li><a href="#">Spacion Business Centre</a></li>
+          <li><p>1st floor, Madhapur, Hyderabad,<br>Telangana, India, 500081</p></li>
+          <li><a href="mailto:hr@sangork.com">Email: hr@sangork.com</a></li>
         </ul>
       </div>
-      
-      <!-- Legal Links -->
-       
-      <div class="col-lg-4 col-md-6 mb-4">
-        <h5>Legal & Policies</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Privacy Notice</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Security Policy</a></li>
+
+      <div class="footer-column">
+        <h5>Legal &amp; Policies</h5>
+        <ul class="footer-list">
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Security Policy</a></li>
         </ul>
-        <p class="mt-4">&copy; 2025 Sangorkglobal Ltd.</p>
       </div>
     </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
+  </footer>
+</main>
+  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">S<span>✳</span></span><span class="brand-name">SANGORK<small>GLOBAL SOLUTIONS</small></span></a><span>© <span id="year"></span> Sangork Global Solutions</span><div><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
